@@ -1,32 +1,153 @@
-  <!-- TO RUN IN BROWSER:
-    1. Install vscode extension Name: open in `browser open-in-browser` by TechER
-    2. Right click html file and either run in default browser or another browser
-  -->
-
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML/CSS Studio</title>
-    <!-- import CSS styles -->
-    <link rel="stylesheet" href="styles.css" /> 
-  </head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Dallas Public Library</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<div class="announcement-banner">
+			<p>
+				<strong> To contact Vital Statistics for birth and death certificates, please call (214) 670-3248. </strong>
+			</p>
+		</div>
 
-  <!-- page content goes into <body> -->
-  <body>
-    <div id="logoBar">
-      <h1>Welcome to 100 Acre Wood!</h1>
-      <img id="siteLogo" alt="Pooh-bear site logo" src="./assets/Header.png"/>
-      <h3>We're glad you're here :D</h3>
-    </div>
-    <hr/>
-    <div id="staffGallery">
-      <img class="galleryImage" src="./assets/Eeyore-Eh.png"/>
-      <img class="galleryImage" src="./assets/Eeyore-Zz.png"/>
-      <img class="galleryImage" src="./assets/Kanga-Roo.png"/>
-      <img class="galleryImage" src="./assets/Owl-Phone.png"/>
-    </div>
-  </body>
+		<div class="sticky-header">
+			<header class="header-top container">
+				<div class="logo">
+					<img src="assets/Dallas-Public-Library-Logo-White-RGB.png" alt="Dallas Public Library Logo" />
+				</div>
+				<div class="tagline">
+					<p>Limitless possibilities start with Dallas Public Library</p>
+				</div>
+				<div class="top-tabs">
+					<ul>
+						<li><a>Kids</a></li>
+						<li><a>Teens</a></li>
+						<li><a>Adult Learning</a></li>
+						<li><a>Volunteer</a></li>
+						<li><a>Job Resources</a></li>
+					</ul>
+				</div>
+			</header>
 
+			<nav class="main-nav container">
+				<ul>
+					<li><a>Home</a></li>
+					<li><a>Catalog</a></li>
+					<li><a>My Account</a></li>
+					<li><a>Events</a></li>
+					<li><a>Databases</a></li>
+					<li><a>Services</a></li>
+					<li><a>Support Us</a></li>
+					<li><a>Locations / Hours</a></li>
+					<li><a>About Us</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<section class="hero container">
+			<img src="assets/MarthaWells_Flash.png" alt="Dallas Public Library hero image (slideshow placeholder)" />
+		</section>
+
+		<section class="search-section container">
+			<div class="search-container">
+				<form name="formMain" id="searchForm">
+					<input id="textboxTerm" type="text" value="Type search terms here" placeholder="Type search terms here" />
+					<div class="search-buttons">
+						<input type="button" value="Search" />
+						<input type="button" value="Title" />
+						<input type="button" value="Author" />
+					</div>
+					<select>
+						<option>How do I?</option>
+						<option>Suggest a title...</option>
+						<option>Find a book...</option>
+						<option>Check out ebooks...</option>
+						<option>Log in to my account...</option>
+						<option>Find an e-magazine...</option>
+						<option>Find non-English materials...</option>
+						<option>Arrange a tour...</option>
+						<option>Get a library card...</option>
+						<option>Place an Interlibrary Loan request...</option>
+						<option>Rent a meeting room...</option>
+						<option>Join a book club...</option>
+						<option>Find a community organization...</option>
+						<option>Renew a book...</option>
+						<option>Set up free email account...</option>
+					</select>
+				</form>
+				<button class="upcoming-events">Upcoming Events</button>
+			</div>
+		</section>
+
+		<section class="featured-services container">
+			<h2>Featured Services</h2>
+			<div class="carousel">
+				<div class="carousel-item">
+					<img src="assets/carousel-culturepass.png" alt="Culture Pass" />
+				</div>
+				<div class="carousel-item">
+					<img src="assets/card_digital_archive.png" alt="Digital Collections" />
+				</div>
+				<div class="carousel-item">
+					<img src="assets/carousel-poetlaureate.png" alt="Dallas Poet Laureate" />
+				</div>
+				<div class="carousel-item">
+					<img src="assets/carousel-youthpoetl.png" alt="Youth Poet Laureate" />
+				</div>
+				<div class="carousel-item">
+					<img src="assets/carousel-podcasts.png" alt="DPL Podcasts on Spotify" />
+				</div>
+				<div class="carousel-item">
+					<img src="assets/carousel-essentials.png" alt="DPL Essentials" />
+				</div>
+				<div class="carousel-item">
+					<img src="assets/carousel-creativespaces.png" alt="Creative Spaces" />
+				</div>
+				<div class="carousel-item">
+					<img src="assets/carousel-bundle.png" alt="Grab a Bundle" />
+				</div>
+				<div class="carousel-item">
+					<img src="assets/carousel-ask.png" alt="Ask a Librarian Reference Service" />
+				</div>
+				<div class="carousel-item">
+					<img src="assets/carousel_fdlp.png" alt="Federal Depository Program" />
+				</div>
+			</div>
+		</section>
+
+		<section class="library-cards container">
+			<h2>All you need is a library card</h2>
+			<p><a href="#">How do I get one?</a></p>
+			<div class="cards">
+				<img src="assets/card_overdrive_lb.png" alt="Overdrive" />
+				<img src="assets/card_hoopla_lb.png" alt="Hoopla" />
+				<img src="assets/card_linkedin.png" alt="LinkedIn Learning" />
+				<img src="assets/card_novelist.png" alt="Novelist" />
+			</div>
+		</section>
+
+		<footer class="footer-full">
+			<div class="footer container">
+				<div class="footer-links">
+					<a>City of Dallas</a> | <a>Employment</a> | <a>Support Us</a> | <a>Newsletters</a> | <a>Contact Us</a> |
+					<a>Site Map</a>
+				</div>
+				<div class="footer-info">
+					<p>Dallas Public Library, 1515 Young Street, Dallas, TX 75201</p>
+					<p>214-670-1400 | <a>Ask a Librarian</a></p>
+				</div>
+				<div class="social-icons">
+						<img src="assets/icon_facebook.png" alt="Facebook" />
+						<img src="assets/icon_instgram.png" alt="Instagram" />
+						<img src="assets/icon_youtube.png" alt="YouTube" />
+						<img src="assets/icon_linkedin.png" alt="LinkedIn" />
+						<img src="assets/icon_nextdoor.png" alt="Nextdoor" />
+					</a>
+				</div>
+			</div>
+		</footer>
+	</body>
 </html>
